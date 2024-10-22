@@ -10,8 +10,7 @@ require("dotenv").config();
 const app = express();
 app.use(
   cors({
-    origin: "leaderboard-app-api.vercel.app",
-    methods: ["GET,POST,PUT,DELETE"],
+    origin: true,
     credentials: true,
   })
 );
